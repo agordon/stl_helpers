@@ -1,0 +1,6 @@
+
+src/*.o
+src/*.gch
+
+tests/basename_test
+tests/strerror_test
