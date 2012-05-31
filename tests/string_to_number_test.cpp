@@ -89,6 +89,26 @@ int main(int, char*[])
 	assert ( string_to_ssizet_strict("-12CCZZ", sv) == false ) ;
 	assert ( sv == -314 ) ; // value should remain unchanged
 
+	//test 8
+	sv = -1000;
+	assert ( string_to_ssizet_strict("", sv) == false ) ;
+	assert ( sv == -1000 ) ; // value should remain unchanged
+
+	//test 9
+	v = 2000;
+	assert ( string_to_sizet_strict("", v) == false ) ;
+	assert ( v == 2000 ) ; // value should remain unchanged
+
+	//test 10
+	sv = -1000;
+	assert ( string_to_ssizet("", sv,remains) == false ) ;
+	assert ( sv == -1000 ) ; // value should remain unchanged
+
+	//test 11
+	v = 3000;
+	assert ( string_to_sizet("", v,remains) == false ) ;
+	assert ( v == 3000 ) ; // value should remain unchanged
+
 	cout << "string_to_number - all ok" << endl;
 
 	return 0;
