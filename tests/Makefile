@@ -1,7 +1,7 @@
 CPPFLAGS=-Wall -O0 -g -I../src
 
-all: basename_test \
-     strerror_test
+tests: basename_test \
+       strerror_test
 
 clean:
 	rm -f basename_test strerror_test

@@ -2,8 +2,8 @@
 HEADERS=$(wildcard *.h)
 GCH=$(subst .h,.gch,$(HEADERS))
 
-.PHONY: all
-all: $(GCH)
+.PHONY: tests
+tests: $(GCH)
 
 %.gch: %.h
 	g++ -o $@ -c $<

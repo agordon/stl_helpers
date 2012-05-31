@@ -1,12 +1,13 @@
 
 SUBDIRS=src tests
 
+all: tests
 
-all: $(SUBDIRS)
+tests: $(SUBDIRS)
 
 .PHONY: $(SUBDIRS)
 $(SUBDIRS):
-	$(MAKE) -C $@
+	$(MAKE) -C $@ tests
 
 
 .PHONY: clean
