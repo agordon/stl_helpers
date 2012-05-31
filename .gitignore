@@ -4,3 +4,4 @@ src/*.gch
 
 tests/basename_test
 tests/strerror_test
+tests/string_to_number_test
